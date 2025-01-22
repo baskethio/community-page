@@ -22,7 +22,7 @@ const Comment: React.FC<CommentProps> = ({ comment, postId }) => {
 
   return (
     <div style={{ marginBottom: "15px" }}>
-      <Text weight={500}>{comment.text}</Text>
+      <Text size="500">{comment.text}</Text>
 
       {/* Reply Input */}
       <div style={{ marginTop: "10px" }}>
@@ -40,9 +40,9 @@ const Comment: React.FC<CommentProps> = ({ comment, postId }) => {
       {comment.replies.length > 0 && (
         <List style={{ paddingLeft: "20px" }}>
           {comment.replies.map((reply) => (
-            <li key={reply.id}>
+            <List.Item key={reply.id}>
               <Text>{reply.text}</Text>
-            </li>
+            </List.Item>
           ))}
         </List>
       )}

@@ -13,9 +13,9 @@ const CommentList: React.FC<CommentListProps> = ({ comments, postId }) => {
   return (
     <List style={{ paddingLeft: "20px" }}>
       {comments.map((comment) => (
-        <li key={comment.id}>
+        <List.Item key={comment.id}>
           <Comment comment={comment} postId={postId} />
-        </li>
+        </List.Item>
       ))}
     </List>
   );
