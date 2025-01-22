@@ -15,7 +15,7 @@ The project is structured for modularity, with components and styles stored toge
 First, clone the repository to your local machine:
 
 ```
-git clone https://github.com/your-username/community-page.git
+git clone https://github.com/baskethio/community-page.git
 
 ```
 
